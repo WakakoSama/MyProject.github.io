@@ -1,0 +1,57 @@
+.slider {
+    border: 5px solid #561919; /* Тонкая цветовая рамка */
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider .slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Чтобы картинка не искажалась */
+}
+
+.slide {
+    display: none; /* Скрываем все слайды изначально */
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Масштабируем изображение, чтобы оно полностью заполняло блок */
+}
+
+.prev {
+    position: absolute;
+    left: 10px;
+    top: 40%;
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный цвет для стрелок */
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.next {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный цвет для стрелок */
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(255, 255, 255, 0.7); /* При наведении меняем цвет стрелок */
+}
+
+body { 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
